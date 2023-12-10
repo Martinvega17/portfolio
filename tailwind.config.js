@@ -15,14 +15,10 @@ module.exports = {
       },
     },
     colors: {
-      // Actualiza los nombres de colores según las advertencias
-      sky: colors.sky,
-      stone: colors.stone,
-      neutral: colors.neutral,
-      gray: colors.gray,
-      slate: colors.slate,
+      ...colors,
       primary: colors.purple,
       secondary: colors.pink,
+      // Actualizaciones de nombres de colores
       sky: colors.sky, // Reemplazar lightBlue con sky
       stone: colors.stone, // Reemplazar warmGray con stone
       neutral: colors.neutral, // Reemplazar trueGray con neutral
