@@ -17,7 +17,12 @@ module.exports = {
     colors: {
       ...colors,
       primary: colors.purple,
-      secundary: colors.pink,
+      secondary: colors.pink,
+      sky: colors.sky, // Reemplazar lightBlue con sky
+      stone: colors.stone, // Reemplazar warmGray con stone
+      neutral: colors.neutral, // Reemplazar trueGray con neutral
+      gray: colors.gray, // Reemplazar coolGray con gray
+      slate: colors.slate, // Reemplazar blueGray con slate
     },
   },
   plugins: [],
