@@ -15,7 +15,12 @@ module.exports = {
       },
     },
     colors: {
-      ...colors,
+      // Actualiza los nombres de colores según las advertencias
+      sky: colors.sky,
+      stone: colors.stone,
+      neutral: colors.neutral,
+      gray: colors.gray,
+      slate: colors.slate,
       primary: colors.purple,
       secondary: colors.pink,
       sky: colors.sky, // Reemplazar lightBlue con sky
