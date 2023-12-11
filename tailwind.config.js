@@ -1,5 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
+
+delete colors['lightBlue'];
+delete colors['warmGray'];
+delete colors['trueGray'];
+delete colors['coolGray'];
+delete colors['blueGray'];
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -19,11 +26,11 @@ module.exports = {
       primary: colors.purple,
       secondary: colors.pink,
       // Actualizaciones de nombres de colores
-      sky: colors.sky, // Reemplazar lightBlue con sky
-      stone: colors.stone, // Reemplazar warmGray con stone
-      neutral: colors.neutral, // Reemplazar trueGray con neutral
-      gray: colors.gray, // Reemplazar coolGray con gray
-      slate: colors.slate, // Reemplazar blueGray con slate
+      sky: colors.sky, 
+      stone: colors.stone, 
+      neutral: colors.neutral, 
+      gray: colors.gray, 
+      slate: colors.slate, 
     },
   },
   plugins: [],
