@@ -5,22 +5,7 @@ import TabButton from './TabButton';
 import { content } from '@/tailwind.config';
 
 const TAB_DATA = [
-    {
-        title: "Skills",
-        id: "skills",
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Tailwind CSS</li>
-                <li>Bootstrap</li>
-                <li>Elementary JavaScript</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>React</li>
-            </ul>
-        )
-    },
+
     {
         title: "Education",
         id: "education",
@@ -41,11 +26,37 @@ const TAB_DATA = [
                 <li>2021</li>
             </ul>
         )
+    },
+    {
+        title: "Skills",
+        id: "skills",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Elementary JavaScript</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>React</li>
+            </ul>
+        )
+    },
+    {
+        title: "Network Skills",
+        id: "netskills",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>SO Windows/Linux</li>
+                <li>Windows Server</li>
+            </ul>
+        )
     }
 ]
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
+    const [tab, setTab] = useState("education");
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => {
@@ -68,13 +79,7 @@ const AboutSection = () => {
                         I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
-                        <TabButton
-                            selectTab={() => handleTabChange("skills")}
-                            active={tab === "skills"}
-                        >
-                            {" "}
-                            Skills{" "}
-                        </TabButton>
+
                         <TabButton
                             selectTab={() => handleTabChange("education")}
                             active={tab === "education"}
@@ -88,6 +93,20 @@ const AboutSection = () => {
                         >
                             {" "}
                             Certifications{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("skills")}
+                            active={tab === "skills"}
+                        >
+                            {" "}
+                            Skills{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("netskills")}
+                            active={tab === "netskills"}
+                        >
+                            {" "}
+                            Network Skills{" "}
                         </TabButton>
                     </div>
                     <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>

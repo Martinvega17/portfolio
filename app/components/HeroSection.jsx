@@ -115,7 +115,7 @@ const HeroSection = () => {
                 />
               </Link>
               <Link
-                href="https://wa.link/te6kfv"
+                href="https://wa.link/4b13tx/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-2">
