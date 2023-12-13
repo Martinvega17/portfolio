@@ -166,7 +166,7 @@ const EmailSection = () => {
                                 placeholder="Let's talk about..."
                             />
                         </div>
-                        <div className="col-span-2">
+                        <div className="col-span-2 mb-6">
                             <ReCAPTCHA
                                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                                 onChange={onChange}
