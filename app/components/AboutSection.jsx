@@ -18,9 +18,6 @@ const TAB_DATA = [
                 <li>PHP</li>
                 <li>Laravel</li>
                 <li>React</li>
-                <li>Nextjs</li>
-                <li>Linux</li>
-                <li>Windows Server</li>
             </ul>
         )
     },
