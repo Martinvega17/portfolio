@@ -23,8 +23,8 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
+      primary: colors.blue,
+      secondary: colors.blue,
       // Actualizaciones de nombres de colores
       sky: colors.sky, 
       stone: colors.stone, 
