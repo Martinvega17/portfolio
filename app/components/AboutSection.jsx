@@ -10,12 +10,17 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-                <li>Squelize</li>
-                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Elementary JavaScript</li>
+                <li>PHP</li>
+                <li>Laravel</li>
                 <li>React</li>
+                <li>Nextjs</li>
+                <li>Linux</li>
+                <li>Windows Server</li>
             </ul>
         )
     },
@@ -24,9 +29,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>University of North Carolina at Charlotte</li>
-                <li>Full Stack Web Development Bootcamp</li>
-                <li>2021</li>
+                <li>Recent graduate in Computer Engineering with a specialisation in cyber-security</li>
+                <li>Bachelor Technician in Computer Science</li>
             </ul>
         )
     },
