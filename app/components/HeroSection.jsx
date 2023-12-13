@@ -63,14 +63,71 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/hero-image.png"
-              alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
-            />
+          <div className="relative">
+            <div className="rounded-full  bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+              <Image
+                src="/images/hero-image.png"
+                alt="hero image"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className="flex mt-4 justify-center gap-4">
+              <Link
+                href="https://github.com/Martinvega17"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-2">
+                <Image
+                  className="transform transition-transform hover:scale-110"
+                  src="/icons/github.svg"
+                  alt="GitHub"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/martin-vega-perez/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-2">
+                <Image
+                  className="transform transition-transform hover:scale-110"
+                  src="/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              {/* Exta */}
+              <Link
+                href="mailto:martinvega0313@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-2">
+                <Image
+                  className="transform transition-transform hover:scale-110"
+                  src="/icons/gmail.svg"
+                  alt="Gmail"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link
+                href="https://wa.link/te6kfv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-2">
+                <Image
+                  className="transform transition-transform hover:scale-110"
+                  src="/icons/whatsapp.svg"
+                  alt="Whatsapp"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>
