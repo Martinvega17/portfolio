@@ -118,7 +118,6 @@ const EmailSection = () => {
                             Your name
                         </label>
                         <input
-                            name="name"
                             type="text"
                             id="name"
                             required
@@ -134,7 +133,6 @@ const EmailSection = () => {
                             Your email
                         </label>
                         <input
-                            name="email"
                             type="email"
                             id="email"
                             required
@@ -150,7 +148,6 @@ const EmailSection = () => {
                             Subject
                         </label>
                         <input
-                            name="subject"
                             type="text"
                             id="subject"
                             required
@@ -166,7 +163,6 @@ const EmailSection = () => {
                             Message
                         </label>
                         <textarea
-                            name="message"
                             id="message"
                             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Let's talk about..."
