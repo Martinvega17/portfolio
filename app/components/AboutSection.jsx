@@ -43,7 +43,7 @@ const TAB_DATA = [
                     <li>React</li>
                 </ul>
                 <IconsSocial
-                    iconNames={['html', 'css', 'tailwindcss', 'javascript', 'php', 'laravel']}
+                    iconNames={['html', 'css', 'tailwindcss', 'javascript', 'php', 'laravel', 'git', 'github']}
                 />
 
 
@@ -54,10 +54,15 @@ const TAB_DATA = [
         title: "Network Skills",
         id: "netskills",
         content: (
+            <div >
             <ul className='list-disc pl-2'>
                 <li>SO Windows/Linux</li>
                 <li>Windows Server</li>
             </ul>
+            <IconsSocial
+                    iconNames={['linux', 'windows']}
+                />
+            </div>
         )
     }
 ]
