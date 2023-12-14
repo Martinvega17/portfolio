@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
+import IconsSocial from './IconsSocial';
 import { content } from '@/tailwind.config';
 
 const TAB_DATA = [
@@ -11,8 +12,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Recent graduate in Computer Engineering with a specialisation in cyber-security</li>
-                <li>Bachelor Technician in Computer Science</li>
+                <li>Newly graduated in computer engineering with a specialisation in cyber-Security, December 2023</li>
+                <li>Bachelor Technician in Computer Science, 2018</li>
             </ul>
         )
     },
@@ -21,9 +22,8 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Full Stack Web Development</li>
-                <li>University of North Carolina at Charlotte</li>
-                <li>2021</li>
+                <li>NSE2 Network Security Associate (Fortinet), December 2022</li>
+                <li>NSE1 Network Security Associate (Fortinet), October 2022</li>
             </ul>
         )
     },
@@ -31,16 +31,23 @@ const TAB_DATA = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className='list-disc pl-2'>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Tailwind CSS</li>
-                <li>Bootstrap</li>
-                <li>Elementary JavaScript</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>React</li>
-            </ul>
+            <div className="">
+                <ul className='list-disc pl-2'>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Elementary JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>React</li>
+                </ul>
+                <IconsSocial
+                    iconNames={['html', 'css', 'tailwindcss', 'javascript', 'php', 'laravel']}
+                />
+
+
+            </div>
         )
     },
     {
